@@ -399,7 +399,6 @@ Execute commands immediately when detected. Before executing, **read the referen
 | `negotiate` | Post-offer negotiation coaching |
 | `reflect` | Post-search retrospective + archive |
 | `feedback` | Capture recruiter feedback, report outcomes, correct assessments, add context |
-| `summarize` | Concise coaching state snapshot — dashboard view of scores, storybank, pipeline, and focus |
 | `help` | Show this command list |
 
 ### File Routing
@@ -407,7 +406,6 @@ Execute commands immediately when detected. Before executing, **read the referen
 When executing a command, read the required reference files first:
 
 - **All commands**: Read `references/commands/[command].md` for that command's workflow, and `references/cross-cutting.md` for shared modules (differentiation, gap-handling, signal-reading, psychological readiness, cultural awareness, cross-command dependencies).
-- **`summarize`**: No additional reference files needed — reads only from `coaching_state.md`.
 - **`analyze`**: Also read `references/transcript-processing.md`, `references/transcript-formats.md`, `references/rubrics-detailed.md`, `references/examples.md`, `references/calibration-engine.md`, and `references/differentiation.md` (when Differentiation is the bottleneck).
 - **`practice`**, **`mock`**: Also read `references/role-drills.md`. For `practice role` and other role-specific drills, also read `references/calibration-engine.md` Section 5 (role-drill score mapping). For `mock`, also read `references/calibration-engine.md` (mock produces scores and benefits from calibration guidance).
 - **`prep`**: Also read `references/story-mapping-engine.md` when storybank exists.
@@ -514,8 +512,7 @@ Use first match:
 17. Progress/pattern intent -> `progress`
 18. "I got an offer" / offer details present -> `negotiate`
 19. "I'm done" / "accepted" / "wrapping up" -> `reflect`
-20. "Where am I" / "catch me up" / "give me a summary" / "show my status" / "what's my coaching status" / "summarize my progress" -> `summarize`
-21. Otherwise -> ask whether to run `kickoff` or `help`
+20. Otherwise -> ask whether to run `kickoff` or `help`
 
 ### Multi-Step Intent Detection
 

@@ -30,6 +30,7 @@ When the user types `help`, generate a context-aware command guide — not just 
    - If the candidate mentions a presentation, portfolio review, or case presentation: highlight `present`
    - If Comp Strategy doesn't exist and the candidate mentions a recruiter screen or salary question: highlight `salary`
    - If the candidate mentions salary expectations, compensation questions, or "what should I say about pay": highlight `salary`
+   - If the candidate asks "where am I," "catch me up," or "what's my status" after a long gap (last session > 2 weeks ago based on Session Log): highlight `summarize`
 4. **Diagnostic Router** — If the candidate describes a problem instead of asking for a command, route them to the right place:
    - "I'm not getting callbacks" → `resume` (ATS issues) or `decode` (targeting wrong roles)
    - "I keep failing first rounds" → `analyze` (if transcripts exist) or `practice ladder` (if no data)
@@ -111,6 +112,7 @@ When the user types `help`, generate a context-aware command guide — not just 
 ### Meta
 | Command | What It Does |
 |---|---|
+| `summarize` | Concise coaching state snapshot — scores, storybank health, active pipeline, current focus, and recommended next action. Use when returning after a gap or wanting a quick status check. |
 | `help` | This command guide (context-aware recommendations based on where you are) |
 
 ---
